@@ -18,8 +18,8 @@ source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 
 # (list) Application requirements
-# Fijamos la versión estable de Python a 3.10 para evitar errores de Cython
-requirements = python3==3.10.12,kivy==2.3.0
+# Se deja python3 sin version fija para que coincida automáticamente con hostpython3
+requirements = python3,kivy==2.3.0
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
@@ -31,7 +31,7 @@ fullscreen = 0
 # android.permissions = INTERNET
 
 # (list) Target architectures
-# Solo arm64-v8a para reducir el tiempo de compilación a la mitad
+# Solo arm64-v8a para optimizar el tiempo de compilación
 android.archs = arm64-v8a
 
 # (int) Target Android API
